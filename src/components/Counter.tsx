@@ -3,7 +3,7 @@ import { Users, Heart, Award } from 'lucide-react';
 
 type Counts = { projects: number; lives: number; members: number };
 
-const TARGET: Counts = { projects: 10, lives: 75000, members: 50 };
+const TARGET: Counts = { projects: 10, lives: 100000, members: 45 };
 
 function useCountUp(isActive: boolean, target: number, duration = 1400) {
   const [value, setValue] = React.useState(0);
@@ -100,7 +100,7 @@ const Counter = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <StatCard icon={Award} label="Projects" value={projects} suffix="+" />
           <StatCard icon={Heart} label="Lives Impacted" value={lives} suffix="+" />
-          <StatCard icon={Users} label="Team Members" value={members} />
+          <StatCard icon={Users} label="Team Members" value={members} suffix="+" />
         </div>
         {/* aria-live region for assistive tech */}
         <div ref={liveRef} className="sr-only" aria-live="polite" />

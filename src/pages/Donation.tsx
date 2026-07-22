@@ -128,7 +128,7 @@ const Donation = () => {
     },
     {
       icon: Users,
-      number: "75k+",
+      number: "100000+",
       title: "People Served",
       description: "Lives touched and transformed",
     },
@@ -172,7 +172,7 @@ const Donation = () => {
             <p className="mt-6 text-xl text-gray-300 max-w-2xl">
               This isn’t about giving, it’s about moving forward.
               Each step you take with Achena Sukh brings food, shelter, and education to someone in need.
-              Together we’ve already brightened 75k+ lives — and with your support, even more futures can shine.
+              Together we’ve already brightened 100000+ lives — and with your support, even more futures can shine.
             </p>
           </div>
 

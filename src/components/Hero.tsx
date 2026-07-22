@@ -78,13 +78,15 @@ const Hero = () => {
               <ArrowRight className="w-5 h-5" />
             </Link>
             <a
-              href="#attendance-form"
+              href="https://docs.google.com/spreadsheets/d/1s8okDgaFLMVGWA5AYX7IfuzW53uCYBwGTQ7GQYNZxuM/edit?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
               className="inline-flex items-center justify-center gap-2 rounded-full bg-red-500 px-8 py-4 text-black font-semibold shadow-lg transition
                          hover:bg-red-600 active:scale-[0.99]
                          focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
-              aria-label="Blood Donar"
+              aria-label="Blood Donation 2026"
             >
-              <span>Blood Donar</span>
+              <span>Blood Donation 2026</span>
             </a>
           </div>          
         </div>

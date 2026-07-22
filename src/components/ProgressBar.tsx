@@ -15,7 +15,7 @@ function ProgressBar({ current, total, lang = 'bn' }: ProgressBarProps) {
       // show in লক্ষ if >= 100000
       if (amount >= 100000) {
         const lakhs = amount / 100000;
-        return `${lakhs.toFixed(lakhs >= 10 ? 0 : 2)} লক্ষ`;
+        return `${lakhs.toFixed(lakhs >= 10 ? 1 : 2)} লক্ষ`;
       }
       return `${amount.toLocaleString('en-IN')}`;
     }
@@ -23,7 +23,7 @@ function ProgressBar({ current, total, lang = 'bn' }: ProgressBarProps) {
     // English formatting - remove currency symbol
     if (amount >= 100000) {
       const lakhs = amount / 100000;
-      return `${lakhs.toFixed(lakhs >= 10 ? 0 : 2)} L`;
+      return `${lakhs.toFixed(lakhs >= 10 ? 1 : 2)} L`;
     }
     return `${amount.toLocaleString()}`;
   };

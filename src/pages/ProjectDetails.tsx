@@ -10,9 +10,15 @@ import {
   Users,
   Phone,
   Mail,
+  PlayCircle,
   TrendingUp as TrendingUpIcon,
 } from 'lucide-react';
 import ProgressBar from '../components/ProgressBar';
+
+const PROJECT_POSTER =
+  'https://res.cloudinary.com/dtbgkad9m/image/upload/v1782055858/WhatsApp_Image_2026-06-21_at_20.58.52_2_qxgqfz.jpg';
+const PROJECT_VIDEO =
+  'https://res.cloudinary.com/dtbgkad9m/video/upload/v1782634980/WhatsApp_Video_2026-06-28_at_13.47.50_nvghvu.mp4';
 
 interface ProjectDetailsProps {
   onNavigateToDonate?: () => void;
@@ -109,7 +115,7 @@ function ProjectDetails({ onNavigateToDonate }: ProjectDetailsProps) {
   const WHATSAPP_GROUP_URL = 'https://chat.whatsapp.com/FbsCTa7wgruG4ujKz3ZwID';
 
   const totalAmount = 1200000;
-  const collected = 800000;
+  const collected = 1000000;
 
   const [lang, setLang] = useState<'bn' | 'en'>('bn');
 
@@ -246,9 +252,10 @@ function ProjectDetails({ onNavigateToDonate }: ProjectDetailsProps) {
           <div className="mt-6 mb-6">
              <video
               src="https://res.cloudinary.com/dtbgkad9m/video/upload/WhatsApp_Video_2026-01-07_at_20.32.27_myly5w.mp4"
+              poster={PROJECT_POSTER}
               controls
-              autoPlay
-              loop
+              preload="metadata"
+              playsInline
               className="w-full rounded-xl"
             ></video>
           </div>
@@ -267,6 +274,25 @@ function ProjectDetails({ onNavigateToDonate }: ProjectDetailsProps) {
             >
               <MessageCircle className="w-5 h-5" /> {t('whatsappBtn')}
             </button> */}
+          </div>
+        </section>
+
+        <section className="bg-[#121212] rounded-2xl shadow p-4 md:p-6 mb-8 border border-white/10">
+          <div className="mb-4 flex items-center gap-3">
+            <PlayCircle className="w-6 h-6 text-[#b0db9c]" />
+            <h3 className="text-2xl font-bold text-white">June 2026 Video</h3>
+          </div>
+          <div className="relative aspect-[9/16] w-full overflow-hidden rounded-2xl border border-white/10 bg-black sm:aspect-video">
+            <video
+              src={PROJECT_VIDEO}
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="auto"
+              controls
+              className="h-full w-full object-cover"
+            />
           </div>
         </section>
 

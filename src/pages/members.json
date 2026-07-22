@@ -373,16 +373,64 @@
     "updatedAt": "2025-08-25T16:56:59.954Z",
     "__v": 0
   },
-  {
-    "_id": "68ac95db9f082b8abc029563",
-    "name": " AMITABHA BARIK ",
+{
+    "_id": "68ac7ea29f082b8abc02953d",
+    "name": "PUSPENDU KUMAR MAITI",
     "position": "GENERAL MEMBER",
-    "email": "brk.amitabha@gmail.com",
-    "phone": "9609068166",
-    "blood": "O+",
-    "imageUrl": "https://res.cloudinary.com/dtbgkad9m/image/upload/v1766011328/amitava_merged-3_-_amitabha_barik_em7ulk.jpg    git add .",
-    "createdAt": "2025-08-25T16:56:59.954Z",
-    "updatedAt": "2025-08-25T16:56:59.954Z",
+    "email": "puspendukumarmaiti100@gmail.com",
+    "phone": "9733631799",
+    "blood": "AB+",
+    "imageUrl": "https://res.cloudinary.com/dtbgkad9m/image/upload/v1775248421/IMG-20260402-WA0039_yskri9.jpg",
+    "createdAt": "2025-08-25T15:17:54.788Z",
+    "updatedAt": "2025-08-25T15:17:54.788Z",
+    "__v": 0
+  },
+  {
+    "_id": "68ac7ea29f082b8abc02953d",
+    "name": "BARNALI PAUL",
+    "position": "GENERAL MEMBER",
+    "email": "",
+    "phone": "9733453609",
+    "blood": "B+",
+    "imageUrl": "https://res.cloudinary.com/dtbgkad9m/image/upload/v1782052605/WhatsApp_Image_2026-06-21_at_19.46.36_gtoa9r.jpg",
+    "createdAt": "2025-08-25T15:17:54.788Z",
+    "updatedAt": "2025-08-25T15:17:54.788Z",
+    "__v": 0
+  },
+  {
+    "_id": "68ac7ea29f082b8abc02953d",
+    "name": "CHAITALI DAS",
+    "position": "GENERAL MEMBER",
+    "email": "",
+    "phone": "9775118560",
+    "blood": "",
+    "imageUrl": "https://res.cloudinary.com/dtbgkad9m/image/upload/v1782052606/WhatsApp_Image_2026-06-21_at_19.57.01_oaknvv.jpg",
+    "createdAt": "2025-08-25T15:17:54.788Z",
+    "updatedAt": "2025-08-25T15:17:54.788Z",
+    "__v": 0
+  },
+  {
+    "_id": "68ac7ea29f082b8abc02953d",
+    "name": "SUSMITA DAS",
+    "position": "GENERAL MEMBER",
+    "email": "",
+    "phone": "7596876560",
+    "blood": "B+",
+    "imageUrl": "https://res.cloudinary.com/dtbgkad9m/image/upload/v1782633372/WhatsApp_Image_2026-06-28_at_13.17.13_iykty5.jpg",
+    "createdAt": "2025-08-25T15:17:54.788Z",
+    "updatedAt": "2025-08-25T15:17:54.788Z",
+    "__v": 0
+  },
+  {
+    "_id": "68ac7ea29f082b8abc02953d",
+    "name": "SUSHIL KUMAR DAS",
+    "position": "GENERAL MEMBER",
+    "email": "",
+    "phone": "9593015233",
+    "blood": "B+",
+    "imageUrl": "https://res.cloudinary.com/dtbgkad9m/image/upload/v1782633373/WhatsApp_Image_2026-06-28_at_13.17.12_lky4gh.jpg",
+    "createdAt": "2025-08-25T15:17:54.788Z",
+    "updatedAt": "2025-08-25T15:17:54.788Z",
     "__v": 0
   }
 ]
