@@ -58,6 +58,30 @@ body {
   animation: scroll-right 40s linear infinite;
 }
 
+.project-gallery-scroll-ltr {
+  animation: project-gallery-scroll-ltr 34s linear infinite;
+}
+
+.project-gallery-scroll-ltr:hover {
+  animation-play-state: paused;
+}
+
+@keyframes project-gallery-scroll-ltr {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-gallery-scroll-ltr {
+    animation: none;
+    transform: translateX(0);
+  }
+}
+
 /* Perspective for 3D effects */
 .perspective-1000 {
   perspective: 1000px;

@@ -30,16 +30,12 @@ const About = () => {
 
       <div className="container mx-auto px-4 relative">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-          {/* Media: flex-basis by content, no forced aspect, full image visible */}
           <div className="lg:col-span-5">
             <div className="relative overflow-hidden rounded-2xl border border-white/10 shadow-2xl bg-[#0f0f0f] p-3">
-              <div
-                className="flex items-center justify-center md:shrink-0" // prevent unexpected shrink on md+
-                style={{ contain: 'content' }}
-              >
+              <div className="flex items-center justify-center md:shrink-0" style={{ contain: 'content' }}>
                 <img
                   src="https://res.cloudinary.com/dtbgkad9m/image/upload/v1756875840/White_Yellow_Simple_Humanity_Starts_With_Charity_Instagram_Post_20250831_143938_0000_evlia5.jpg"
-                  alt="Achena Sukh volunteers bringing happiness through community programs"
+                  alt="Achena Sukh volunteers supporting community programs in West Bengal"
                   className="object-contain object-center max-w-full max-h-[70vh] md:max-h-[60vh] w-auto h-auto"
                   loading="lazy"
                 />
@@ -48,33 +44,30 @@ const About = () => {
             </div>
           </div>
 
-          {/* Content */}
           <div className="lg:col-span-7">
-            <h1
+            <h2
               id="about-heading"
               className="text-4xl md:text-5xl font-extrabold mb-2 bg-gradient-to-r from-white to-[#b0db9c] bg-clip-text text-transparent"
             >
               About Achena Sukh
-            </h1>
+            </h2>
 
-            {/* Estd line */}
             <div className="mb-6 text-xs md:text-sm font-semibold tracking-widest uppercase text-gray-300">
               <time dateTime="2020-03-22">Estd - 22/03/2020</time>
             </div>
 
             <div className="space-y-5 text-lg leading-relaxed">
               <p className="text-gray-300">
-                Welcome to <span className="font-semibold text-white">ACHENA SUKH</span>, where “Achena” means unknown and “Sukh” means happiness. We believe in deeper fulfillment—the happiness born from helping others and making a positive impact. Through our activities, both recipients and volunteers experience meaningful well‑being.
+                Welcome to <span className="font-semibold text-white">ACHENA SUKH</span>, a registered nonprofit charitable trust working with communities across Sundarban and West Bengal. We believe in deeper fulfillment: the happiness born from helping others and making a positive impact.
               </p>
               <p className="text-gray-300">
-                We are Achena Sukh with a noble cause. Our mission is to bring light where there was pause, to uplift lives and make dreams come true. We believe in making a difference—how about you?
+                Since 2020, our volunteers have supported underprivileged families through education, health, relief, dignity, and community development initiatives. Our registration number is IV-190400062/2021.
               </p>
               <p className="text-gray-400">
-                Through our programs and initiatives, we strive to bring unknown happiness, alleviate pain, and create lasting impact. Join the journey toward a brighter tomorrow. Together, we can spread joy and banish sorrow.
+                Through our programs and initiatives, we strive to bring unknown happiness, alleviate pain, and create lasting impact. Join the journey toward a brighter tomorrow in the Sundarban region and beyond.
               </p>
             </div>
 
-            {/* Stats */}
             <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
               <Stat icon={Heart} value="100,000+" label="People served" />
               <Stat icon={Target} value="5+" label="Years of experience" />

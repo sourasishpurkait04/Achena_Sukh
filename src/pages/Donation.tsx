@@ -176,13 +176,51 @@ const Donation = () => {
             </p>
           </div>
 
-          {/* Right Column - Photo */}
-          <div className="lg:col-span-5">
-            <img
-              src="https://res.cloudinary.com/dtbgkad9m/image/upload/v1771806276/WhatsApp_Image_2026-02-23_at_05.52.59_cp2ev6.jpg"
-              alt="Achena Sukh community work"
-              className="w-full h-90 object-cover rounded-xl shadow-lg border border-[#b0db9c]/20"
-            />
+          {/* Right Column - Donation Notice */}
+          <div className="lg:col-span-5 flex justify-center">
+            <div className="w-full max-w-[480px] rounded-[28px] border border-[#4a4a4a] bg-[#2a2a2a] p-5 text-white shadow-[0_0_30px_rgba(0,0,0,0.18)] sm:p-6">
+              <div className="rounded-[22px] border border-[#4a4a4a] bg-[#1f1f1f] p-5 text-left sm:p-6">
+                <div className="mb-4 text-center text-[15px] font-bold uppercase tracking-[0.2em] text-[#b0db9c] sm:text-[18px]">
+                  জরুরি বিজ্ঞপ্তি
+                </div>
+
+                <div className="space-y-1 text-center text-[14px] font-semibold leading-relaxed text-white sm:text-[16px]">
+                  <p className="font-bold uppercase tracking-[0.04em]">ACHENA SUKH</p>
+                  <p className="font-semibold uppercase tracking-[0.04em]">NON PROFITABLE TRUST</p>
+                  <p>Reg.no-IV-190400062/2021</p>
+                  <p>A/C NO-0598200100000164</p>
+                  <p>IFSC- PUNB0059820</p>
+                  <p>Branch-Kakdwip</p>
+                </div>
+
+                <div className="my-4 border-t border-dashed border-[#b0db9c]/40"></div>
+
+                <p className="text-center text-[12.5px] leading-relaxed text-[#f0f0f0] sm:text-[14px]">
+                  Gpay তে কিছু নতুন রুল আসার জন্য আমাদের G.pay acটা অফ হয়ে গেছে ‌। Gst না থাকলে গুগল বিজনেস খোলা যাবে না। আমরা কথা বলছি গুগলের ম্যানেজমেন্টের সঙ্গে। সমস্যার সমাধান না হওয়া পর্যন্ত আপনারা ব্যাংকের একাউন্টেই টাকাটা পাঠাবেন🙏🏻
+                </p>
+
+                <div className="my-4 border-t border-dashed border-[#b0db9c]/40"></div>
+
+                <div className="mb-3 text-center text-[15px] font-bold uppercase tracking-[0.2em] text-[#b0db9c] sm:text-[18px]">
+                  Emergency Notice
+                </div>
+
+                <div className="space-y-1 text-center text-[14px] font-semibold leading-relaxed text-white sm:text-[16px]">
+                  <p className="font-bold uppercase tracking-[0.04em]">ACHENA SUKH</p>
+                  <p className="font-semibold uppercase tracking-[0.04em]">NON PROFITABLE TRUST</p>
+                  <p>Reg.no-IV-190400062/2021</p>
+                  <p>A/C NO-0598200100000164</p>
+                  <p>IFSC- PUNB0059820</p>
+                  <p>Branch-Kakdwip</p>
+                </div>
+
+                <div className="my-4 border-t border-dashed border-[#b0db9c]/40"></div>
+
+                <p className="text-center text-[12.5px] leading-relaxed text-[#f0f0f0] sm:text-[14px]">
+                  Due to some new rules in GPay, our GPay account has been deactivated. Without GST, Google Business cannot be opened. We are speaking with Google management. Until the issue is resolved, please send your donation to the bank account only. 🙏🏻
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

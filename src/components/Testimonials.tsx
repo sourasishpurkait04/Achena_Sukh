@@ -18,7 +18,7 @@ const Testimonials = () => {
     },
     {
       quote:  'অসহায় মানুষের পাশে দাঁড়ানোয় এত সুখ , শান্তি, তৃপ্তি অচেনা সুখ শিখিয়েছে।',
-      name: 'LAXMAN DAS',
+      name: 'LAKSHMAN DAS',
       position: 'VICE-CHAIRPERSON',
       Occupation: 'RATION DEALER',
     },

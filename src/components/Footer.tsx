@@ -1,12 +1,13 @@
 // Footer.jsx
 import React from "react";
-import { Heart, Mail, Phone, MapPin, Facebook, Instagram, ExternalLink } from "lucide-react";
+import { Heart, Mail, Phone, MapPin, Facebook, Instagram, Linkedin, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
   const socialLinks = {
     facebook: "https://www.facebook.com/achenasukh1",
     instagram: "https://www.instagram.com/achena_sukh/",
+    linkedin: "https://www.linkedin.com/company/achena-sukh/?viewAsMember=true",
   };
 
   const devs = [
@@ -56,6 +57,10 @@ const Footer = () => {
               <a href={socialLinks.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram"
                  className="bg-[#1d1d1d] p-3 rounded-full hover:bg-[#b0db9c] hover:text-black transition transform hover:scale-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b0db9c] focus-visible:ring-offset-2 focus-visible:ring-offset-black">
                 <Instagram className="w-5 h-5" />
+              </a>
+              <a href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"
+                 className="bg-[#1d1d1d] p-3 rounded-full hover:bg-[#b0db9c] hover:text-black transition transform hover:scale-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b0db9c] focus-visible:ring-offset-2 focus-visible:ring-offset-black">
+                <Linkedin className="w-5 h-5" />
               </a>
             </div>
           </div>

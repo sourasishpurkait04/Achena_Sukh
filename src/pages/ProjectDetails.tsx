@@ -13,12 +13,12 @@ import {
   PlayCircle,
   TrendingUp as TrendingUpIcon,
 } from 'lucide-react';
-import ProgressBar from '../components/ProgressBar';
+// import ProgressBar from '../components/ProgressBar';
 
 const PROJECT_POSTER =
   'https://res.cloudinary.com/dtbgkad9m/image/upload/v1782055858/WhatsApp_Image_2026-06-21_at_20.58.52_2_qxgqfz.jpg';
 const PROJECT_VIDEO =
-  'https://res.cloudinary.com/dtbgkad9m/video/upload/v1782634980/WhatsApp_Video_2026-06-28_at_13.47.50_nvghvu.mp4';
+  'https://res.cloudinary.com/dtbgkad9m/video/upload/v1786904311/WhatsApp_Video_2026-08-16_at_23.39.25_p88iql.mp4';
 
 interface ProjectDetailsProps {
   onNavigateToDonate?: () => void;
@@ -82,7 +82,7 @@ const TRANSLATIONS: Record<string, Record<string, string>> = {
     progressHeading: 'প্রকল্পের ধার্য্য অর্থ',
     needHelpHeading: 'আমরা আপনার সাহায্য খুঁজছি',
     needHelpPara:
-      'আমরা সবাই মিলে যদি একসাথে দাঁড়াই, তবে অসহায় মানুষের জন্য একটি সুন্দর ভবিষ্যৎ গড়ে তোলা সম্ভব। আচেনা সুখ বর্তমানে আশ্রম মনোরঞ্জন-সুখ নিকেতন নির্মাণের কাজ চালিয়ে যাচ্ছে, যেখানে গৃহহীন ও অসহায় প্রবীণ নাগরিকদের জন্য স্নেহ, যত্ন ও মর্যাদার পরিবেশ তৈরি করা হবে। যাতে দীর্ঘমেয়াদে প্রবীণদের পাশে দাঁড়ানো যায়। আপনার সহযোগিতা ও অবদান আমাদের জন্য অমূল্য| প্রতিটি অবদান অসহায় প্রবীণদের জীবনে নতুন আশার আলো জ্বালাতে পারে।',
+      'আমরা সবাই মিলে যদি একসাথে দাঁড়াই, তবে অসহায় মানুষের জন্য একটি সুন্দর ভবিষ্যৎ গড়ে তোলা সম্ভব। আচেনা সুখ বর্তমানে আশ্রম মনোরঞ্জন-সুখ নিকেতন নির্মাণের কাজ চালিয়ে যাচ্ছে, যেখানে গৃহহীন ও অসহায় প্রবীণ নাগরিকদের জন্য স্নেহ, যত্ন ও মর্যাদার পরিবেশ তৈরি করা হবে। যাতে দীর্ঘমেয়াদে প্রবীণদের পাশে দাঁড়ানো যায়। আপনার সহযোগিতা ও অবদান আমাদের জন্য অমূল্য| প্রতিটি অবদান অসহায় প্রবীণদের জীবনে নতুন আশার আলো জ্বালাতে পারে। ',
     donateNow: 'যোগদান করুন',
     learnMore: 'আরও জানুন',
     galleryHeading: 'প্রকল্পের বর্তমান পরিস্থিতি',
@@ -114,8 +114,8 @@ function ProjectDetails({ onNavigateToDonate }: ProjectDetailsProps) {
   // const WHATSAPP_GROUP_URL = 'https://wa.me/917029992422?text=Hello%20I%20want%20to%20know%20more%20about%20Monoranjan-Sukh%20Niketan%20and%20I%20want%20to%20join%20the%20WhatsApp%20group%20of%20Achena%20Sukh';
   const WHATSAPP_GROUP_URL = 'https://chat.whatsapp.com/FbsCTa7wgruG4ujKz3ZwID';
 
-  const totalAmount = 1200000;
-  const collected = 1000000;
+  // const totalAmount = 395000;
+  // const collected = 35000;
 
   const [lang, setLang] = useState<'bn' | 'en'>('bn');
 
@@ -297,7 +297,7 @@ function ProjectDetails({ onNavigateToDonate }: ProjectDetailsProps) {
         </section>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
-          <div className="lg:col-span-2 bg-[#121212] rounded-2xl shadow p-8 border border-white/10">
+          {/* <div className="lg:col-span-2 bg-[#121212] rounded-2xl shadow p-8 border border-white/10">
             <h3 className="text-2xl font-bold mb-6 text-white">{t('progressHeading')}</h3>
             <ProgressBar current={collected} total={totalAmount} lang={lang} />
 
@@ -322,7 +322,7 @@ function ProjectDetails({ onNavigateToDonate }: ProjectDetailsProps) {
                 </button>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <aside className="bg-[#121212] rounded-2xl shadow p-6 sticky top-6 h-fit border border-white/10">
             <h4 className="text-xl font-bold mb-4 text-white">{t('locationLabel')} & info</h4>
@@ -360,15 +360,27 @@ function ProjectDetails({ onNavigateToDonate }: ProjectDetailsProps) {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
-          <section className="lg:col-span-2 bg-[#121212] rounded-2xl shadow p-6 border border-white/10">
+          <section className="lg:col-span-3 bg-[#121212] rounded-2xl shadow p-4 md:p-6 border border-white/10 overflow-hidden">
             <h4 className="text-xl font-bold mb-4 text-white">{t('galleryHeading')}</h4>
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-              {galleryImages.slice(0, 8).map((img) => (
-                <div key={img.id} className="rounded-lg overflow-hidden aspect-square shadow-sm border border-white/10">
-                  <img src={img.image} alt={galleryTitle(img.id)} className="w-full h-full object-cover" loading="lazy" />
-                  <div className="p-2 text-sm text-center text-white bg-black/50">{galleryTitle(img.id)}</div>
-                </div>
-              ))}
+            <div className="relative -mx-4 md:-mx-6 overflow-hidden">
+              <div className="project-gallery-scroll-ltr flex w-max gap-4 px-4 md:px-6">
+                {[...galleryImages, ...galleryImages].map((img, index) => (
+                  <div
+                    key={`${img.id}-${index}`}
+                    className="relative h-44 w-[68vw] max-w-[240px] shrink-0 overflow-hidden rounded-lg border border-white/10 shadow-sm sm:h-48 sm:w-56 md:h-56 md:w-64"
+                    aria-hidden={index >= galleryImages.length}
+                  >
+                    <img
+                      src={img.image}
+                      alt={index < galleryImages.length ? galleryTitle(img.id) : ''}
+                      className="h-full w-full object-cover"
+                      loading="lazy"
+                    />
+                  </div>
+                ))}
+              </div>
+              <div className="pointer-events-none absolute inset-y-0 left-0 w-10 bg-gradient-to-r from-[#121212] to-transparent" />
+              <div className="pointer-events-none absolute inset-y-0 right-0 w-10 bg-gradient-to-l from-[#121212] to-transparent" />
             </div>
           </section>
 

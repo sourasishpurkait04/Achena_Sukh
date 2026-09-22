@@ -49,18 +49,18 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 w-full">
         <div className="mx-auto max-w-4xl px-4 py-[clamp(4rem,8vh,6rem)] text-center">
-          <h1 className="text-5xl md:text-7xl font-extrabold mb-3 bg-gradient-to-r from-white to-[#b0db9c] bg-clip-text text-transparent tracking-tight drop-shadow-[0_1px_1px_rgba(0,0,0,0.4)]">
-            Achena Sukh
+          <h1 className="text-3xl md:text-6xl font-extrabold mb-3 bg-gradient-to-r from-white to-[#b0db9c] bg-clip-text text-transparent tracking-tight drop-shadow-[0_1px_1px_rgba(0,0,0,0.4)]">
+            Empowering Sundarban, Inspiring Change
             <br />
           </h1>
 
           {/* Estd line */}
           <div className="mb-6 text-sm md:text-base font-semibold tracking-widest uppercase text-gray-200/90">
-            Estd: 22/03/2020
+            Achena Sukh | Estd: 22/03/2020
           </div>
 
           <p className="text-lg md:text-2xl mb-10 text-gray-100/90 max-w-2xl mx-auto leading-relaxed drop-shadow-[0_1px_1px_rgba(0,0,0,0.35)]">
-            A non-profitable charitable trust dedicated to helping the underprivileged and making a positive impact in the community.
+            A registered nonprofit charitable trust serving Sundarban and West Bengal communities through education, health, relief, dignity, and community development.
             <br />
             Reg no. - IV-190400062/2021
           </p>

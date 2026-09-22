@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Facebook, Instagram, Youtube, X } from 'lucide-react';
+import { Facebook, Instagram, Linkedin, Youtube, X } from 'lucide-react';
 
 const FloatingSocial = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -7,6 +7,7 @@ const FloatingSocial = () => {
   const socialLinks = {
     facebook: "https://www.facebook.com/achenasukh1",
     instagram: "https://www.instagram.com/achena_sukh/",
+    linkedin: "https://www.linkedin.com/company/achena-sukh/?viewAsMember=true",
     youtube: "https://www.youtube.com/@achenasukh9006"
   };
 
@@ -20,6 +21,7 @@ const FloatingSocial = () => {
               href={socialLinks.facebook}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Facebook"
               className="bg-[#1877f2] hover:bg-[#166fe5] p-3 rounded-full shadow-lg transform hover:scale-110 transition-all duration-300"
             >
               <Facebook className="w-6 h-6 text-white" />
@@ -28,14 +30,25 @@ const FloatingSocial = () => {
               href={socialLinks.instagram}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Instagram"
               className="bg-gradient-to-r from-[#f58529] via-[#dd2a7b] to-[#8134af] hover:opacity-90 p-3 rounded-full shadow-lg transform hover:scale-110 transition-all duration-300"
             >
               <Instagram className="w-6 h-6 text-white" />
             </a>
             <a
+              href={socialLinks.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              className="bg-[#0a66c2] hover:bg-[#004182] p-3 rounded-full shadow-lg transform hover:scale-110 transition-all duration-300"
+            >
+              <Linkedin className="w-6 h-6 text-white" />
+            </a>
+            <a
               href={socialLinks.youtube}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="YouTube"
               className="bg-[#ff0000] hover:bg-[#cc0000] p-3 rounded-full shadow-lg transform hover:scale-110 transition-all duration-300"
             >
               <Youtube className="w-6 h-6 text-white" />

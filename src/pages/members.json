@@ -12,18 +12,6 @@
     "__v": 0
   },
   {
-    "_id": "68ac7f989f082b8abc02953f",
-    "name": "SUMAN MANDAL ",
-    "position": "GENERAL MEMBER ",
-    "email": "sm6745068@gmail.com",
-    "phone": "8617499552",
-    "blood": "B+",
-    "imageUrl": "https://res.cloudinary.com/dtbgkad9m/image/upload/v1756135241/17546388749169004902807273572298_-_Suman_Mondal_dmfva5.jpg",
-    "createdAt": "2025-08-25T15:22:00.862Z",
-    "updatedAt": "2025-08-25T15:22:00.862Z",
-    "__v": 0
-  },
-  {
     "_id": "68ac80a49f082b8abc029541",
     "name": "ARNAB KUNDU",
     "position": "TECHNICAL MEMBER",
@@ -143,19 +131,6 @@
     "updatedAt": "2025-08-25T15:49:38.481Z",
     "__v": 0
   },
-  {
-    "_id": "68ac86779f082b8abc029557",
-    "name": "SUMAN CHAKRABORTY ",
-    "position": "GENERAL MEMBER",
-    "email": "Sumanchakraborty9898@gmail.com",
-    "phone": "9811399187",
-    "blood": "AB+",
-    "imageUrl": "https://res.cloudinary.com/dtbgkad9m/image/upload/v1756137013/Screenshot_20250810_162857_Gallery_-_Suman_Chakraborty_j0huci.jpg",
-    "createdAt": "2025-08-25T15:51:19.581Z",
-    "updatedAt": "2025-08-25T15:51:19.581Z",
-    "__v": 0
-  },
-
   {
     "_id": "68ac95db9f082b8abc029563",
     "name": "SUBINAY PRADHAN",
@@ -429,6 +404,18 @@
     "phone": "9593015233",
     "blood": "B+",
     "imageUrl": "https://res.cloudinary.com/dtbgkad9m/image/upload/v1782633373/WhatsApp_Image_2026-06-28_at_13.17.12_lky4gh.jpg",
+    "createdAt": "2025-08-25T15:17:54.788Z",
+    "updatedAt": "2025-08-25T15:17:54.788Z",
+    "__v": 0
+  },
+  {
+    "_id": "68ac7ea29f082b8abc02953d",
+    "name": "SANTANU SEKHAR KAR",
+    "position": "GENERAL MEMBER",
+    "email": "",
+    "phone": "9874261458",
+    "blood": "A+",
+    "imageUrl": "https://res.cloudinary.com/dtbgkad9m/image/upload/v1786904154/WhatsApp_Image_2026-08-16_at_23.39.25_pfqm3g.jpg",
     "createdAt": "2025-08-25T15:17:54.788Z",
     "updatedAt": "2025-08-25T15:17:54.788Z",
     "__v": 0

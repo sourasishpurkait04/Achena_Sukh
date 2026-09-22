@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import { ArrowRight, MapPin } from 'lucide-react';
 
 const PROJECT_POSTER =
-  'https://res.cloudinary.com/dtbgkad9m/image/upload/v1782055858/WhatsApp_Image_2026-06-21_at_20.58.52_2_qxgqfz.jpg';
+  'https://res.cloudinary.com/dtbgkad9m/image/upload/v1789325386/WhatsApp_Image_2026-09-14_at_00.08.10_me0y7k.jpg';
 
 const Project1 = () => {
   const navigate = useNavigate();
