@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,7 +7,7 @@
 
 
 body {
-  font-family: 'Libertinus Serif', serif;
+  font-family: 'Libertinus Serif', 'Noto Serif Bengali', serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -112,7 +113,7 @@ html {
 
 /* Custom utility classes */
 .font-serif {
-  font-family: 'Libertinus Serif', serif;
+  font-family: 'Libertinus Serif', 'Noto Serif Bengali', serif;
 }
 
 html, body {

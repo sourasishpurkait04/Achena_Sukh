@@ -31,6 +31,20 @@ function Home() {
       <Counter />
       <Members />
       <Project1 />
+
+      <section aria-label="Durga Puja campaign" className="border-y border-white/10 bg-[#0b0b0b] px-4 py-16 sm:py-20">
+
+        <div className="mx-auto max-w-5xl text-center">
+
+          <p className="mx-auto mt-6 max-w-4xl text-lg leading-9 text-gray-200 sm:text-xl">
+            সুন্দরবনের এক আদিবাসী গ্রামে ৭০ জন শিশুর হাতে পুজোর নতুন পোশাক তুলে দেওয়ার উদ্যোগের পাশাপাশি, গ্রামের মায়েদের আবেদনে ৩০ জন মায়ের হাতেও পৌঁছে দিতে চাই পুজোর নতুন শাড়ি। মহালয়ার পুণ্যতিথিতে জীবন্ত দুর্গাদের সম্মান জানিয়ে তাঁদের মুখে হাসি ফোটাতে অচেনা সুখের এই ছোট্ট প্রয়াস। আপনাদের সহযোগিতা ও ভালোবাসাই আমাদের শক্তি।
+          </p>
+          <p className="mt-6 text-xl font-bold text-[#b0db9c] sm:text-2xl">
+            সাহায্য নয়, সহচর্য চাই।
+          </p>
+        </div>
+      </section>
+
       <Projects />
       <About />
       <Reviews />

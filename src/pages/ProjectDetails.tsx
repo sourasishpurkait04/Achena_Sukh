@@ -20,93 +20,52 @@ const PROJECT_POSTER =
 const PROJECT_VIDEO =
   'https://res.cloudinary.com/dtbgkad9m/video/upload/v1786904311/WhatsApp_Video_2026-08-16_at_23.39.25_p88iql.mp4';
 
+
 interface ProjectDetailsProps {
   onNavigateToDonate?: () => void;
 }
 
 const TRANSLATIONS: Record<string, Record<string, string>> = {
   en: {
-    title: 'Monoranjan-Sukh Niketan',
-    subtitle: 'Standing with the disadvantaged, building for the future',
+    title: 'Monoranjan Sukh Niketan',
     aboutHeading: 'About the project',
-    aboutPara1:
-      'Our trust has initiated a humane project to build a home for the elderly who have no shelter. This project will provide a safe haven for the destitute and abandoned senior citizens.',
-    aboutPara2: 'We believe every person deserves dignity and care. Your help will make this project possible.',
-    locationLabel: 'Location',
-    locationValue: 'Korbarhi Stoppage Ashokpur, Purba Moyna Para',
-    finishLabel: 'Estimated completion',
-    finishValue: 'February 2026',
-    planHeading: 'Project Plan (Design)',
-    downloadBtn: 'Download Plan (PDF)',
-    whatsappBtn: 'Join group (WhatsApp)',
-    progressHeading: 'Project Progress',
-    needHelpHeading: 'We need your help',
-    needHelpPara:
-      'This project requires your contribution. Every amount helps save lives and build a better future.',
-    donateNow: 'Donate Now',
-    learnMore: 'Learn more',
-    galleryHeading: 'Project Photo Gallery',
-    mapHeading: 'Map',
-    ctaHeading: 'Join us',
-    ctaPara: 'Every contribution changes a life — please donate today based on your ability.',
-    joinGroup: 'Join group',
-    footerCopy: 'All rights reserved.',
-    phoneLabel: 'Phone',
-    emailLabel: 'Email',
-    orgName: 'Achenna Sukh',
-    clickMap: '— click map for details',
-    backLabel: 'Back',
-    gallery1: 'Project Start',
-    gallery2: 'Construction',
-    gallery3: 'Progress',
-    gallery4: 'Current State',
-    gallery5: 'Foundation Work',
-    gallery6: 'Roofing Work',
-    gallery7: 'Interior Work',
-    gallery8: 'Finishing Stage',
+    aboutPara1: 'Our trust is building a safe home for older people who have nowhere to turn. The home will offer shelter, care and dignity to people who are vulnerable or have been abandoned.',
+    aboutPara2: 'Everyone deserves to live with dignity and care. Your support can help make this home a reality.',
+    locationLabel: 'Location', locationValue: 'Korbarhi Stoppage, Ashokpur, Purba Moyna Para',
+    finishLabel: 'Estimated completion', finishValue: 'March 2027',
+    planHeading: 'Project plan', downloadBtn: 'Download the plan (PDF)', whatsappBtn: 'Join the WhatsApp group',
+    progressHeading: 'Project progress', needHelpHeading: 'Your support is needed',
+    needHelpPara: 'Your contribution helps us build a safe, welcoming home for older people who need support.',
+    donateNow: 'Donate now', learnMore: 'Learn more', galleryHeading: 'Project photos', mapHeading: 'Map', videoHeading: 'June 2026 video',
+    ctaHeading: 'Stand with us', ctaPara: 'Every contribution can help improve someone’s life. Please donate what you can.',
+    joinGroup: 'Join the WhatsApp group', footerCopy: 'All rights reserved.', phoneLabel: 'Phone', emailLabel: 'Email',
+    orgName: 'Achena Sukh', clickMap: '— open the map for details', backLabel: 'Go back',
+    gallery1: 'Project begins', gallery2: 'Construction', gallery3: 'Progress', gallery4: 'Current state',
+    gallery5: 'Wall construction', gallery6: 'Roof work', gallery7: 'Interior work', gallery8: 'Finishing work',
   },
   bn: {
-    title: 'মনোরঞ্জন-সুখ নিকেতন',
-    subtitle: 'পিছিয়ে পড়াদের পাশে, ভবিষ্যতের পথে',
-    aboutHeading: 'আমাদের প্রকল্প সম্পর্কে',
-    aboutPara1:
-      'সম্প্রতি আমাদের একটি নতুন মানবিক প্রকল্প হিসেবে একটি বৃদ্ধাশ্রম (আশ্রয়হীনদের জন্য আশ্রয়স্থল) নির্মাণের পরিকল্পনা গ্রহণ করা হয়েছে। এই প্রকল্পটি দুঃস্থ, অসহায় এবং পরিত্যক্ত বয়স্ক মানুষদের জন্য একটি নিরাপদ আশ্রয়স্থল প্রদান করবে।',
-    aboutPara2: 'আমরা বিশ্বাস করি প্রতিটি মানুষ সম্মান ও যত্নের যোগ্য। আপনার সাহায্যই প্রকল্পকে বাস্তবে রূপ দেবে।',
-    locationLabel: 'অবস্থান',
-    locationValue: 'করবাড়ি স্টপেজ অশোকপুর, পূর্বময়না পাড়া',
-    finishLabel: 'সম্ভাব্য সমাপ্তি',
-    finishValue: 'ফেব্রুয়ারি ২০২৬',
-    planHeading: 'প্রকল্প পরিকল্পনা (নকশা)',
-    downloadBtn: 'পরিকল্পনা ডাউনলোড করুন (PDF)',
-    // whatsappBtn: 'গ্রুপে যোগ দিন (WhatsApp)',
-    progressHeading: 'প্রকল্পের ধার্য্য অর্থ',
-    needHelpHeading: 'আমরা আপনার সাহায্য খুঁজছি',
-    needHelpPara:
-      'আমরা সবাই মিলে যদি একসাথে দাঁড়াই, তবে অসহায় মানুষের জন্য একটি সুন্দর ভবিষ্যৎ গড়ে তোলা সম্ভব। আচেনা সুখ বর্তমানে আশ্রম মনোরঞ্জন-সুখ নিকেতন নির্মাণের কাজ চালিয়ে যাচ্ছে, যেখানে গৃহহীন ও অসহায় প্রবীণ নাগরিকদের জন্য স্নেহ, যত্ন ও মর্যাদার পরিবেশ তৈরি করা হবে। যাতে দীর্ঘমেয়াদে প্রবীণদের পাশে দাঁড়ানো যায়। আপনার সহযোগিতা ও অবদান আমাদের জন্য অমূল্য| প্রতিটি অবদান অসহায় প্রবীণদের জীবনে নতুন আশার আলো জ্বালাতে পারে। ',
-    donateNow: 'যোগদান করুন',
-    learnMore: 'আরও জানুন',
-    galleryHeading: 'প্রকল্পের বর্তমান পরিস্থিতি',
-    mapHeading: 'মানচিত্র',
-    ctaHeading: 'আমাদের সাথে যুক্ত হন',
-    ctaPara: 'আমরা আপনাকে আন্তরিকভাবে আহ্বান জানাই—আপনার সহযোগিতা ও সমর্থন আমাদের জন্য অমূল্য। আসুন, একসাথে হাত মেলাই এবং প্রবীণ ও অসহায় মানুষের জীবনে নতুন আশার আলো জ্বালাই।।',
-    joinGroup: 'গ্রুপে যোগ দিন',
-    footerCopy: '',
-    phoneLabel: 'ফোন',
-    emailLabel: 'ইমেইল',
-    orgName: 'অচেনা সুখ',
-    clickMap: '— মানচিত্রে ক্লিক করে বিস্তারিত দেখুন',
-    backLabel: 'ফিরে যান',
-    gallery1: 'প্রকল্প শুরু',
-    gallery2: 'নির্মাণ কাজ',
-    gallery3: 'অগ্রগতি',
-    gallery4: 'বর্তমান অবস্থা',
-    gallery5: 'দেওয়াল নির্মাণ',
-    gallery6: 'ছাদের কাজ',
-    gallery7: 'অভ্যন্তরীণ কাজ',
-    gallery8: 'চূড়ান্ত পর্যায়',
+
+    videoHeading: 'জুন ২০২৬-এর ভিডিও',
+
+    title: 'মনোরঞ্জন সুখ নিকেতন', subtitle: 'অসহায় প্রবীণদের পাশে, নিরাপদ ভবিষ্যতের পথে',
+    aboutHeading: 'প্রকল্প সম্পর্কে',
+    aboutPara1: 'আমাদের ট্রাস্ট আশ্রয়হীন প্রবীণদের জন্য একটি নিরাপদ আবাস গড়ে তুলছে। এই আশ্রয়কেন্দ্রে অসহায় ও পরিত্যক্ত প্রবীণরা আশ্রয়, যত্ন ও মর্যাদা নিয়ে থাকতে পারবেন।',
+    aboutPara2: 'প্রত্যেক মানুষের সম্মান ও যত্ন পাওয়ার অধিকার আছে। আপনার সহায়তায় এই আবাস গড়ে তোলা সম্ভব হবে।',
+    locationLabel: 'ঠিকানা', locationValue: 'করবাড়ি স্টপেজ, অশোকপুর, পূর্ব ময়না পাড়া',
+    finishLabel: 'সম্ভাব্য সমাপ্তি', finishValue: 'মার্চ ২০২৭',
+    planHeading: 'প্রকল্পের নকশা', downloadBtn: 'নকশা ডাউনলোড করুন (PDF)', whatsappBtn: 'হোয়াটসঅ্যাপ গ্রুপে যোগ দিন',
+    progressHeading: 'প্রকল্পের অগ্রগতি', needHelpHeading: 'আপনার সহায়তা প্রয়োজন',
+    needHelpPara: 'যাঁদের সহায়তা প্রয়োজন, তাঁদের জন্য নিরাপদ ও স্নেহপূর্ণ আবাস গড়তে আপনার অনুদান সাহায্য করবে।',
+    donateNow: 'অনুদান দিন', learnMore: 'আরও জানুন', galleryHeading: 'প্রকল্পের ছবি', mapHeading: 'মানচিত্র',
+    ctaHeading: 'আমাদের পাশে থাকুন',
+    ctaPara: 'আপনার প্রতিটি অনুদান কারও জীবনকে আরও ভালো করতে সাহায্য করতে পারে। সামর্থ্য অনুযায়ী অনুদান দিন।',
+    joinGroup: 'হোয়াটসঅ্যাপ গ্রুপে যোগ দিন', footerCopy: 'সর্বস্বত্ব সংরক্ষিত।', phoneLabel: 'ফোন',
+    emailLabel: 'ইমেল', orgName: 'অচেনা সুখ', clickMap: '— বিস্তারিত জানতে মানচিত্র খুলুন',
+    backLabel: 'ফিরে যান', gallery1: 'প্রকল্পের শুরু', gallery2: 'নির্মাণকাজ', gallery3: 'অগ্রগতি',
+    gallery4: 'বর্তমান অবস্থা', gallery5: 'দেয়াল নির্মাণ', gallery6: 'ছাদের কাজ', gallery7: 'ভেতরের কাজ',
+    gallery8: 'শেষ পর্যায়ের কাজ',
   },
 };
-
 function ProjectDetails({ onNavigateToDonate }: ProjectDetailsProps) {
   const navigate = useNavigate();
 
@@ -131,13 +90,13 @@ function ProjectDetails({ onNavigateToDonate }: ProjectDetailsProps) {
   const t = (key: string) => TRANSLATIONS[lang][key] ?? key;
 
   const [galleryImages] = useState([
-    { id: 1, title: 'প্রকল্প শুরু', image: 'https://res.cloudinary.com/dtbgkad9m/image/upload/v1766005539/WhatsApp_Image_2025-10-12_at_13.53.06_d159e69b_gsja5e.jpg' },
-    { id: 2, title: 'নির্মাণ কাজ', image: 'https://res.cloudinary.com/dtbgkad9m/image/upload/v1766005553/WhatsApp_Image_2025-12-16_at_12.01.15_e2d957ce_fmcfvn.jpg' },
-    { id: 3, title: 'অগ্রগতি', image: 'https://res.cloudinary.com/dtbgkad9m/image/upload/v1766008053/WhatsApp_Image_2025-12-15_at_10.32.37_9a38078e_wxmosk.jpg' },
-    { id: 4, title: 'বর্তমান অবস্থা', image: 'https://res.cloudinary.com/dtbgkad9m/image/upload/v1766005547/WhatsApp_Image_2025-12-16_at_12.01.15_2d37953b_r5iqzh.jpg' },
-    { id: 5, title: 'দেওয়াল নির্মাণ', image: 'https://res.cloudinary.com/dtbgkad9m/image/upload/v1766005553/WhatsApp_Image_2025-12-16_at_12.01.15_e2d957ce_fmcfvn.jpg' },
-    { id: 6, title: 'ছাদের কাজ', image: 'https://res.cloudinary.com/dtbgkad9m/image/upload/v1766008324/WhatsApp_Image_2025-12-16_at_12.01.11_94653d33_xx7oso.jpg' },
-    
+    { id: 1, title: 'Project photo', image: 'https://res.cloudinary.com/dtbgkad9m/image/upload/v1766005539/WhatsApp_Image_2025-10-12_at_13.53.06_d159e69b_gsja5e.jpg' },
+    { id: 2, title: 'Project photo', image: 'https://res.cloudinary.com/dtbgkad9m/image/upload/v1766005553/WhatsApp_Image_2025-12-16_at_12.01.15_e2d957ce_fmcfvn.jpg' },
+    { id: 3, title: 'Project photo', image: 'https://res.cloudinary.com/dtbgkad9m/image/upload/v1766008053/WhatsApp_Image_2025-12-15_at_10.32.37_9a38078e_wxmosk.jpg' },
+    { id: 4, title: 'Project photo', image: 'https://res.cloudinary.com/dtbgkad9m/image/upload/v1766005547/WhatsApp_Image_2025-12-16_at_12.01.15_2d37953b_r5iqzh.jpg' },
+    { id: 5, title: 'Project photo', image: 'https://res.cloudinary.com/dtbgkad9m/image/upload/v1766005553/WhatsApp_Image_2025-12-16_at_12.01.15_e2d957ce_fmcfvn.jpg' },
+    { id: 6, title: 'Project photo', image: 'https://res.cloudinary.com/dtbgkad9m/image/upload/v1766008324/WhatsApp_Image_2025-12-16_at_12.01.11_94653d33_xx7oso.jpg' },
+
   ]);
 
   const handleDonateClick = () => {
@@ -166,8 +125,8 @@ function ProjectDetails({ onNavigateToDonate }: ProjectDetailsProps) {
   };
 
   return (
-    <div className="min-h-screen bg-black text-white">
-      <header className="bg-gradient-to-r from-[#b0db9c] to-[#78e0dc] text-black py-16 px-4 shadow-xl relative">
+    <div lang={lang} className="min-h-screen bg-black text-white">
+      <header className="bg-gradient-to-r from-[#246b55] to-[#237d85] text-white py-16 px-4 shadow-xl relative" style={{ backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.62)), url(https://res.cloudinary.com/dtbgkad9m/image/upload/v1795191711/WhatsApp_Image_2026-11-20_at_21.51.19_vl6s43.jpg)", backgroundPosition: "center", backgroundSize: "cover" }}>
         <div className="absolute top-6 left-6">
           <button
             onClick={() => navigate(-1)}
@@ -192,11 +151,11 @@ function ProjectDetails({ onNavigateToDonate }: ProjectDetailsProps) {
             aria-pressed={lang === 'bn'}
             className={`px-3 py-1 rounded-full font-semibold ${lang === 'bn' ? 'bg-black/20' : 'bg-black/10'}`}
           >
-            বাংলা
+            EN / BN
           </button>
         </div> */}
 
-        <div className="max-w-7xl mx-auto text-center">
+        <div className="max-w-7xl mx-auto text-center pt-8">
           <div className="flex justify-center mb-6">
             <img src="https://res.cloudinary.com/dtbgkad9m/image/upload/v1756218997/Logo2_kuyzqh.png" alt="Achena Sukh logo" className="w-18 h-16" />
           </div>
@@ -206,6 +165,13 @@ function ProjectDetails({ onNavigateToDonate }: ProjectDetailsProps) {
       </header>
 
       <main className="max-w-7xl mx-auto px-4 py-12">
+
+
+
+
+
+
+
         <section className="bg-[#121212] rounded-2xl shadow p-8 md:p-12 mb-8 border border-white/10">
           <div className="flex items-start gap-4 mb-6">
             <Users className="w-10 h-10 text-[#b0db9c]" />
@@ -232,6 +198,23 @@ function ProjectDetails({ onNavigateToDonate }: ProjectDetailsProps) {
                 <p className="text-lg font-medium text-white">{t('finishValue')}</p>
               </div>
             </div>
+          </div>
+        </section>
+
+<section className="mb-10 px-2 py-4 text-center">
+          <img
+            src="https://res.cloudinary.com/dtbgkad9m/image/upload/v1795189971/WhatsApp_Image_2026-11-20_at_21.22.10_mapcnw.jpg"
+            alt="স্বর্গীয় মনোরঞ্জন ভান্ডারী"
+            className="mx-auto mb-8 max-h-[480px] w-full max-w-md rounded-xl object-contain"
+            loading="lazy"
+          />
+          <div className="mx-auto max-w-4xl">
+            <h2 className="mb-5 text-2xl font-bold leading-relaxed text-white md:text-3xl">
+              স্বর্গীয় মনোরঞ্জন ভান্ডারী
+            </h2>
+            <p className="text-left text-base leading-8 text-gray-200 md:text-lg">
+              “অচেনা সুখ”-এর স্বপ্ন ছিল একদিন আকাশে ভাসমান রঙিন রেখা—দূরের, অধরা, কেবল কল্পনার আলো। আপনারা সেই স্বপ্নকে মাটির গন্ধ দিলেন; দানশীল, উর্বর হৃদয় খুলে স্বপ্নের হাতে তুলে দিলেন ভূমির স্পন্দন। এই আড়াই বিঘে শুধু মাপের হিসাব নয়—এ এক আশ্রয়ের অঙ্গীকার, এ এক আগামী প্রজন্মের হাসির বীজ। এখানেই “সুখনিকেতন” ধীরে ধীরে শ্বাস নিচ্ছে; গড়ে উঠছে ইঁটের গাঁথুনিতে মমতা, দেওয়ালের ভেতর মানবিকতার আলো। “অচেনা সুখ” আজ নত কণ্ঠে উচ্চারণ করে—এই দান পরিমাণে নয়, প্রার্থনায় বিশাল। এ শুধু জমি নয়, এ এক অনন্ত আশীর্বাদ। আপনাদের মহত্ব সময়ের বুক জুড়ে লেখা থাকবে শ্রদ্ধায়, ভালোবাসায়, কৃতজ্ঞতার দীপশিখায়।
+            </p>
           </div>
         </section>
 
@@ -280,7 +263,7 @@ function ProjectDetails({ onNavigateToDonate }: ProjectDetailsProps) {
         <section className="bg-[#121212] rounded-2xl shadow p-4 md:p-6 mb-8 border border-white/10">
           <div className="mb-4 flex items-center gap-3">
             <PlayCircle className="w-6 h-6 text-[#b0db9c]" />
-            <h3 className="text-2xl font-bold text-white">June 2026 Video</h3>
+            <h3 className="text-2xl font-bold text-white">{t('videoHeading')}</h3>
           </div>
           <div className="relative aspect-[9/16] w-full overflow-hidden rounded-2xl border border-white/10 bg-black sm:aspect-video">
             <video
@@ -303,7 +286,7 @@ function ProjectDetails({ onNavigateToDonate }: ProjectDetailsProps) {
 
             <div className="mt-6 p-6 bg-white/5 rounded-lg border border-white/10">
               <p className="text-lg text-gray-300 mb-4">
-                
+
               </p>
               <p className="text-gray-300 mb-6">{t('needHelpPara')}</p>
 
@@ -325,7 +308,7 @@ function ProjectDetails({ onNavigateToDonate }: ProjectDetailsProps) {
           </div> */}
 
           <aside className="bg-[#121212] rounded-2xl shadow p-6 sticky top-6 h-fit border border-white/10">
-            <h4 className="text-xl font-bold mb-4 text-white">{t('locationLabel')} & info</h4>
+            <h4 className="text-xl font-bold mb-4 text-white">{t('locationLabel')} & contact</h4>
 
             <div className="space-y-3 mb-4">
               <div className="flex items-start gap-3">
@@ -412,7 +395,7 @@ function ProjectDetails({ onNavigateToDonate }: ProjectDetailsProps) {
 
       <footer className="bg-gray-800 text-white py-8">
         <div className="max-w-6xl mx-auto text-center text-sm text-gray-300">
-          © {new Date().getFullYear()} {t('orgName')} — {t('footerCopy')}
+          &copy; {new Date().getFullYear()} {t('orgName')} - {t('footerCopy')}
         </div>
       </footer>
     </div>

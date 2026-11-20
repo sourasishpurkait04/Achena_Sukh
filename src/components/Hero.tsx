@@ -49,9 +49,9 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 w-full">
         <div className="mx-auto max-w-4xl px-4 py-[clamp(4rem,8vh,6rem)] text-center">
-          <h1 className="text-3xl md:text-6xl font-extrabold mb-3 bg-gradient-to-r from-white to-[#b0db9c] bg-clip-text text-transparent tracking-tight drop-shadow-[0_1px_1px_rgba(0,0,0,0.4)]">
-            Empowering Sundarban, Inspiring Change
-            <br />
+          <h1 className="text-[clamp(1.35rem,7vw,2.25rem)] leading-tight sm:text-5xl md:text-7xl font-extrabold mb-3 bg-gradient-to-r from-white to-[#b0db9c] bg-clip-text text-transparent tracking-tight drop-shadow-[0_1px_1px_rgba(0,0,0,0.4)]">
+            <span className="block sm:inline">Empowering Sundarban,</span>{' '}<span className="block sm:inline">Inspiring Change</span>
+
           </h1>
 
           {/* Estd line */}
@@ -65,10 +65,10 @@ const Hero = () => {
             Reg no. - IV-190400062/2021
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-row gap-2 justify-center sm:gap-4">
             <Link
               to="/donation"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-[#b0db9c] px-8 py-4 text-black font-semibold shadow-lg transition
+              className="inline-flex flex-[0.9] min-w-0 items-center justify-center gap-1 whitespace-nowrap rounded-full bg-[#b0db9c] px-2 py-3 text-xs text-black sm:flex-none sm:gap-2 sm:px-8 sm:py-4 sm:text-base font-semibold shadow-lg transition
                          hover:bg-white hover:shadow-[0_0_30px_rgba(176,219,156,0.6)]
                          active:scale-[0.99]
                          focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b0db9c] focus-visible:ring-offset-2 focus-visible:ring-offset-black"
@@ -78,15 +78,15 @@ const Hero = () => {
               <ArrowRight className="w-5 h-5" />
             </Link>
             <a
-              href="https://docs.google.com/spreadsheets/d/1s8okDgaFLMVGWA5AYX7IfuzW53uCYBwGTQ7GQYNZxuM/edit?usp=sharing"
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-red-500 px-8 py-4 text-black font-semibold shadow-lg transition
-                         hover:bg-red-600 active:scale-[0.99]
-                         focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
-              aria-label="Blood Donation 2026"
+              href="#project-progress-heading"
+
+
+              className="inline-flex flex-[1.3] min-w-0 items-center justify-center gap-1 whitespace-nowrap rounded-full bg-[#FFEFD2] px-2 py-3 text-xs text-black sm:flex-none sm:gap-2 sm:px-8 sm:py-4 sm:text-base font-semibold shadow-lg transition
+                         hover:bg-[#f5dfb7] active:scale-[0.99]
+                         focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFEFD2] focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+              aria-label="Donate for Sundarban"
             >
-              <span>Blood Donation 2026</span>
+              <span>Donate for Sundarban</span>
             </a>
           </div>          
         </div>

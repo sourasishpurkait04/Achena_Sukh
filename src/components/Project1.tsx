@@ -4,6 +4,15 @@ import { ArrowRight, MapPin } from 'lucide-react';
 const PROJECT_POSTER =
   'https://res.cloudinary.com/dtbgkad9m/image/upload/v1789325386/WhatsApp_Image_2026-09-14_at_00.08.10_me0y7k.jpg';
 
+const PROJECT_PROGRESS_IMAGES = [
+  'https://res.cloudinary.com/dtbgkad9m/image/upload/v1792864507/WhatsApp_Image_2026-10-10_at_20.59.54_jrs7y7.jpg',
+  'https://res.cloudinary.com/dtbgkad9m/image/upload/v1792864515/WhatsApp_Image_2026-10-10_at_20.59.55_1_ofrm0y.jpg',
+  'https://res.cloudinary.com/dtbgkad9m/image/upload/v1792864531/WhatsApp_Image_2026-10-10_at_20.59.55_j4pvbh.jpg',
+  'https://res.cloudinary.com/dtbgkad9m/image/upload/v1792864542/WhatsApp_Image_2026-10-10_at_20.59.59_lmknsz.jpg',
+  'https://res.cloudinary.com/dtbgkad9m/image/upload/v1792865069/WhatsApp_Image_2026-10-10_at_21.00.01_gcwxoi.jpg',
+  'https://res.cloudinary.com/dtbgkad9m/image/upload/v1792865079/WhatsApp_Image_2026-10-10_at_21.00.02_ubmyu5.jpg',
+  'https://res.cloudinary.com/dtbgkad9m/image/upload/v1792865091/WhatsApp_Image_2026-10-10_at_21.00.04_zui60x.jpg',
+];
 const Project1 = () => {
   const navigate = useNavigate();
 
@@ -40,7 +49,8 @@ const Project1 = () => {
           </p>
         </div>
 
-        <article className="mt-8 overflow-hidden rounded-[1.5rem] border border-white/10 bg-[#080808] shadow-[0_20px_80px_rgba(0,0,0,0.35)] sm:rounded-[2rem]">
+
+<article className="mt-8 overflow-hidden rounded-[1.5rem] border border-white/10 bg-[#080808] shadow-[0_20px_80px_rgba(0,0,0,0.35)] sm:rounded-[2rem]">
           <button
             type="button"
             onClick={openProjectDetails}
@@ -82,6 +92,30 @@ const Project1 = () => {
             </div>
           </button>
         </article>
+
+<section aria-labelledby="project-progress-heading" className="mt-8 overflow-hidden">
+<h3 id="project-progress-heading" className="mx-auto mb-4 scroll-mt-24 max-w-full px-2 text-center text-[11px] font-bold leading-6 text-white sm:text-xl lg:text-3xl">
+              <span className="block whitespace-nowrap">মাটির প্রতিমায় নয়, এবার জীবন্ত দুর্গার অঞ্জলি —</span>
+              <span className="block whitespace-nowrap">সুন্দরবনে অচেনা সুখের ভালোবাসার উদ্যোগ</span>
+            </h3>
+
+
+
+          <div className="relative -mx-4 overflow-x-auto sm:mx-0">
+            <div className="project-gallery-scroll-ltr flex w-max gap-4 px-4 py-2 sm:px-0">
+              {[...PROJECT_PROGRESS_IMAGES, ...PROJECT_PROGRESS_IMAGES].map((image, index) => (
+                <img
+                  key={`${image}-${index}`}
+                  src={image}
+                  alt={index < PROJECT_PROGRESS_IMAGES.length ? `Project progress photo ${index + 1}` : ''}
+                  aria-hidden={index >= PROJECT_PROGRESS_IMAGES.length}
+                  className="h-52 w-[72vw] max-w-[320px] shrink-0 rounded-xl object-cover sm:h-60"
+                  loading="lazy"
+                />
+              ))}
+            </div>
+          </div>
+        </section>
       </div>
     </section>
   );
