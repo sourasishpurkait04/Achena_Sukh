@@ -203,9 +203,9 @@ function ProjectDetails({ onNavigateToDonate }: ProjectDetailsProps) {
 
 <section className="mb-10 px-2 py-4 text-center">
           <img
-            src="https://res.cloudinary.com/dtbgkad9m/image/upload/v1795189971/WhatsApp_Image_2026-11-20_at_21.22.10_mapcnw.jpg"
+            src="https://res.cloudinary.com/dtbgkad9m/image/upload/v1795199318/WhatsApp_Image_2026-11-20_at_23.55.49_vrzbgk.jpg"
             alt="স্বর্গীয় মনোরঞ্জন ভান্ডারী"
-            className="mx-auto mb-8 max-h-[480px] w-full max-w-md rounded-xl object-contain"
+            className="mx-auto mb-8 block h-auto w-full object-contain"
             loading="lazy"
           />
           <div className="mx-auto max-w-4xl">
